@@ -13,20 +13,17 @@
 
     body {
       font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      /* Новый основной фон сайта - #9D2A2A (терракотово-красный) */
       background-color: #9D2A2A;
       color: #1a1a2e;
       line-height: 1.4;
     }
 
-    /* Desktop fixed width container */
     .container {
       max-width: 1280px;
       margin: 0 auto;
       padding: 0 48px;
     }
 
-    /* Header & navigation - фон верхней строки #F39B9B */
     header {
       background-color: #F39B9B;
       padding: 20px 0;
@@ -50,7 +47,7 @@
       border: none;
       font-size: 1.2rem;
       font-weight: 600;
-      color: #2c1a1a;     /* темный оттенок для контраста на розовом фоне */
+      color: #2c1a1a;  
       cursor: pointer;
       padding: 8px 4px;
       transition: all 0.2s ease;
@@ -59,14 +56,12 @@
       position: relative;
     }
 
-    /* hover effect: белый цвет */
     .nav-btn:hover {
       color: #ffffff;
     }
 
-    /* active page underline — цвет подчеркивания оставляем золотистым как требовалось */
     .nav-btn.active {
-      color: #ffffff;      /* активная кнопка — белая (усиление) */
+      color: #ffffff;  
     }
 
     .nav-btn.active::after {
@@ -102,17 +97,15 @@
       }
     }
 
-    /* Все карточки, блоки с текстом — фон #F39B9B (как и верхняя панель) */
     .card-bg {
       background: #F39B9B;
       border-radius: 28px;
       box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
       padding: 32px 36px;
       margin-top: 24px;
-      color: #2c1a1a;     /* темный текст для читаемости */
+      color: #2c1a1a;
     }
 
-    /* дополнительные информационные блоки на главной — тоже в этом цвете */
     .info-block {
       background: #F39B9B;
       border-radius: 28px;
@@ -122,7 +115,6 @@
       color: #2c1a1a;
     }
 
-    /* достижения / карточки */
     .achievement-card {
       background: #e68484;
       border-radius: 28px;
@@ -141,9 +133,9 @@
       background: #ffaeae;
     }
 
-    /* ресурсы */
+
     .resource-item {
-      background: #e68484;  /* чуть темнее для разнообразия, но в гамме */
+      background: #e68484;
       border-radius: 60px;
       padding: 14px 24px;
       display: flex;
@@ -177,7 +169,6 @@
       color: #1f1a2e;
     }
 
-    /* team page — список участников скроллится */
     .team-list {
       display: flex;
       flex-direction: column;
@@ -246,7 +237,6 @@
       font-weight: 500;
     }
 
-    /* typography */
     h1 {
       font-size: 3.2rem;
       font-weight: 800;
@@ -297,7 +287,6 @@
       margin-top: 40px;
     }
 
-    /* дополнительная кнопка/вспомогательные блоки */
     .btn-soft {
       background: #e27c7c;
       border-radius: 999px;
@@ -320,7 +309,6 @@
       }
     }
 
-    /* Блоки аналогичные главной */
     .flex-row {
       display: flex;
       gap: 20px;
@@ -329,7 +317,6 @@
       margin-top: 32px;
     }
 
-    /* внутренние элементы о проекте */
     .about-highlight {
       background: #e27c7c;
       border-radius: 32px;
@@ -337,7 +324,6 @@
       text-align: center;
     }
 
-    /* ссылки в ресурсах */
     .resource-item span {
       font-weight: 700;
     }
@@ -404,7 +390,7 @@
     <div class="card-bg" style="padding-bottom: 32px;">
       <h2>Наша команда</h2>
       <p class="subhead" style="margin-bottom: 8px;">Активные участники и создатели проекта «Москва 24/7»</p>
-      <!-- большой скроллящийся список: чтобы листалось, много участников -->
+
       <div class="team-list">
         <div class="team-member-card">
           <div class="member-avatar">И</div>
@@ -706,7 +692,6 @@
 </footer>
 
 <script>
-  // DOM элементы
   const pages = {
     home: document.getElementById('home-page'),
     about: document.getElementById('about-page'),
